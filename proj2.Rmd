@@ -1,0 +1,32 @@
+Samsung Activity Predictive Analysis
+========================================================
+
+------
+
+### Load libraries
+
+```{r}
+#library(Hmisc)
+```
+
+
+------
+
+## Processing
+
+Download the loan data (rda)
+
+```{r download and load}
+setwd("~/Dropbox/Career/edu/dataanalysis/project1/code/rawcode")
+download.file("https://spark-public.s3.amazonaws.com/dataanalysis/loansData.rda", destfile="../../data/loansData.rda", method="curl")
+load("../../data/loansData.rda")
+```
+
+
+### Looking at the data
+```{r looking}
+summary(loansData)
+```
+
+
+
